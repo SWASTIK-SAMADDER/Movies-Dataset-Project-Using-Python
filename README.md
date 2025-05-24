@@ -18,3 +18,7 @@ The core objective of this project was to provide a data-driven understanding of
 - **Data Types and Non-Null Counts:** `movies.info()` provided a detailed summary, showing each column's data type (e.g., float64, object) and, critically, the number of non-null entries. This highlighted the immediate presence of missing values.
 - **Descriptive Statistics:** For numerical columns, `movies.describe()` gave me quick statistical summaries like mean, standard deviation, and quartiles. This helps in understanding the distribution and range of values like gross, budget, and imdb_score.
 - **Quantifying Missingness:** To precisely quantify the data quality issues, I used `movies.isnull().sum()` to count nulls per column, and then `round(100*(movies.isnull().sum()/len(movies.index)), 2)` to calculate the percentage of missing values. This revealed significant gaps, notably in gross (17.53%), budget (9.76%), and content_rating (6.01%), which directly informed my cleaning strategy.      
+
+- **(Python Functions to mention here):** `pd.read_csv(), .shape, .info(), .describe(), .isnull().sum(), len(df.index)`
+
+# Data Cleaning and Preprocessing:
